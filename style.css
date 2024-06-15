@@ -30,7 +30,7 @@ h1 {
     text-align: center;
 }
 
-#userinput {
+#userinput,#name,#categorySearch {
     height: 40px;
     width: 250px;
     border-radius: 30px;
@@ -168,4 +168,9 @@ color: black;
 .btns:hover {
 background-color: rgb(159, 159, 238);
 
+}
+.filterinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

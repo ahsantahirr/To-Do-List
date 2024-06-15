@@ -12,9 +12,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body >
-  <div id="login_container" >
-    <section >
+<body>
+  <div id="login_container">
+    <section>
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
           <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo" />
@@ -80,25 +80,23 @@
         <option value="homework">Homework</option>
         <option value="classwork">Classwork</option>
         <option value="officework">Office Work</option>
-        <option value="other1">personal work</option>
-        <option value="other2">Parents Work</option>
+        <option value="personal work">personal work</option>
+        <option value="Parents Work">Parents Work</option>
       </select>
       <input type="date" id="taskDate">
       <input type="time" id="taskTime">
       <button class="btn" id="addbutton" onclick="addRecord()">Add task</button>
+      <div class="filterinput">
+        <input type="text" id="categorySearch" placeholder="Search by category">
+        <button onclick="filterByCategory()" class="btns">Search</button>
+      </div>
     </div>
 
-
     <ul id="list">
-
     </ul>
-
-
-
   </div>
 
   <script src="script.js"></script>
-   
 </body>
 
 </html>
